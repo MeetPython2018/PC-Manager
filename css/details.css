@@ -1,0 +1,184 @@
+@import url("base.css");
+.header{
+    height: 70px;
+    width: 100%;
+    background: #FFF;
+    position: relative;
+    z-index: 999999;
+    border-bottom: 1px solid #EEE;
+}
+.header .nav{
+    width: 1200px;
+    height: 70px;
+    margin: 0 auto;
+    position: relative;
+}
+.header .nav .logo{
+    display: block;
+    width: 205px;
+    height: 40px;
+    float: left;
+    margin-top: 15px;
+    position: relative;
+}
+.header .nav .logo img{
+    width: 190px;
+    height: 39px;
+}
+.header .nav ul{
+    width: 619px;
+    height: 70px;
+    float: left;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.header .nav ul li{
+    width: 120px;
+    height: 70px;
+    position: relative;
+}
+.header .nav ul li:nth-child(3)::before{
+    width: 120px;
+    height: 3px;
+    background: #2771FA;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+}
+.header .nav ul li:first-child:hover::before{
+    width: 70px;
+    height: 3px;
+    background: #2771FA;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+}
+.header .nav ul li:last-child:hover::before{
+    width: 70px;
+    height: 3px;
+    background: #2771FA;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+}
+.header .nav ul li:nth-child(2):hover::before,.header .nav ul li:nth-child(3):hover::before,.header .nav ul li:nth-child(4):hover::before,.header .nav ul li:nth-child(5):hover::before{
+    width: 120px;
+    height: 3px;
+    background: #2771FA;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+}
+.header .nav ul li a{
+    display: block;
+    width: 64px;
+    height: 70px;
+    line-height: 70px;
+    color: #333;
+    font-size: 16px;
+    border-left: 1px solid #EEE;
+    padding: 0 33px 0 22px;
+    position: relative;
+}
+.header .nav ul li a i{
+    font-style: normal;
+    position: absolute;
+    display: block;
+    right: 15px;
+    top: 33px;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #333 #fff #fff;
+    transition: all 0.2s;
+}
+.header .nav ul .start{
+    width: 69px;
+    height: 70px;
+    position: relative;
+}
+.header .nav ul .end a{
+    border-right: 1px solid #EEE;
+}
+.header .nav ul .start a{
+    float: left;
+    width: 32px;
+    height: 70px;
+    line-height: 70px;
+    color: #333;
+    font-size: 16px;
+    padding: 0 18px 0 18px;
+    position: relative;
+    border-left: 1px solid #EEE;
+}
+.header .nav ul li a:hover span{
+    color: #2771FA;
+}
+.header .nav ul li a:hover i{
+    border-color: #2771FA #fff #fff;
+    transform: rotate(180deg);
+}
+.header .nav .tool{
+    width: 301px;
+    height: 48px;
+    float: right;
+    margin-top: 10px;
+    position: relative;
+}
+.header .nav .tool .qiye{
+    display: block;
+    float: left;
+    margin-left: 20px;
+    width: 48px;
+    height: 48px;
+    background: url("../img/item2/logo/ic_qiye.png") no-repeat 0 0;
+}
+.header .nav .tool .qiye:hover{
+    background-position: 0 -48px;
+}
+.header .nav .tool .phone{
+    display: block;
+    float: left;
+    margin-left: 20px;
+    width: 48px;
+    height: 48px;
+    background: url("../img/item2/logo/ic_block.png") no-repeat -48px 0;
+}
+.header .nav .tool .phone:hover{
+    background-position: -48px -48px;
+}
+.header .nav .tool .MAC{
+    display: block;
+    float: left;
+    margin-left: 20px;
+    width: 48px;
+    height: 48px;
+    background: url("../img/item2/logo/ic_block.png") no-repeat 0 0;
+}
+.header .nav .tool .MAC:hover{
+    background-position: 0 -48px;
+}
+.header .nav .tool .nologin{
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    float: right;
+}
+.header .nav .tool .nologin span{
+    font: 14px/1.5 \5FAE\8F6F\96C5\9ED1, Tahoma;
+    color: #2771FA;
+}
+.header .nav .tool .nologin:hover span{
+    text-decoration: underline;
+}
